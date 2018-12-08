@@ -22,7 +22,7 @@ class Videos extends Component {
                         <Col md={4} className="Video_1">
                             <ReactPlayer
                                 className="player"
-                                url="assests/EDUCATE.mp4"
+                                url="assets/EDUCATE.mp4"
                                 width="100%"
                                 height="100%"
                                 controls />
@@ -30,7 +30,7 @@ class Videos extends Component {
                         <Col md={4}>
                             <ReactPlayer
                                 className="player"
-                                url="assests/EMPOWER.mp4"
+                                url="assets/EMPOWER.mp4"
                                 width="100%"
                                 height="100%"
                                 controls />
@@ -38,7 +38,7 @@ class Videos extends Component {
                         <Col md={4}>
                             <ReactPlayer
                                 className="player"
-                                url="assests/ENJOY.mp4"
+                                url="assets/ENJOY.mp4"
                                 width="100%"
                                 height="100%"
                                 controls />

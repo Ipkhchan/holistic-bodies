@@ -47,10 +47,10 @@ class Training extends Component {
                     <Row className="Picture-wrapper">
                         <Col md={1} sm={0} xs={0}/>
                         <Col className="Picture1-wrapper" xs={6} sm={6} md={5}>
-                            <Image src="assests/Picture_4(1).jpg" responsive className="Picture_1"/>
+                            <Image src="assets/Picture_4(1).jpg" responsive className="Picture_1"/>
                         </Col>
                         <Col className="Picture2-wrapper" xs={6} sm={6} md={5}>
-                            <Image src="assests/Training_2.jpg" responsive className="Picture_2"/>
+                            <Image src="assets/Training_2.jpg" responsive className="Picture_2"/>
                         </Col>
                         <Col md={1} sm={0} xs={0}/>
                     </Row>

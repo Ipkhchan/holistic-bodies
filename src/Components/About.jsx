@@ -28,7 +28,7 @@ class About extends Component {
                         <h2 className="title">About Us</h2>
                         <Col md={6} className="motto-wrapper">
                             <div className="triangle-wrapper">
-                                <Image src="assests/triangle.png" responsive className="triangle"/>
+                                <Image src="assets/triangle.png" responsive className="triangle"/>
                             </div>
                         </Col>
                        {/* <Col md={1} />*/}
@@ -52,7 +52,7 @@ class About extends Component {
                         <h2 className="title">About Me</h2>
                         <Col md={1} />
                         <Col md={6} className="person-wrapper">
-                            <Image src="assests/Hussain.jpg" responsive className="person"/>
+                            <Image src="assets/Hussain.jpg" responsive className="person"/>
                         </Col>
                         <Col md={6} className="About-me-wrapper">
                             <p className="about-hussain-text"><b>Let me start with something John Gall said,</b> "A complex system that works is invariably found to have evolved from a simple system that worked. The inverse proposition also appears to be true: a complex system designed from scratch never works and cannot be made to work. You have to start over, beginning with a simple system.”</p>

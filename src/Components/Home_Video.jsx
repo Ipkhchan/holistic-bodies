@@ -19,7 +19,7 @@ class Home_Videos extends Component {
                             }}>
                                 <ReactPlayer
                                     className="Player"
-                                    url="/assests/LandingPageVideo.mp4"
+                                    url="/assets/LandingPageVideo.mp4"
                                     width="100%"
                                     height="100%"
                                     controls/>
