@@ -25,3 +25,7 @@ yarn-error.log*
 
 # caches
 .firebase
+.idea
+.firebaserc
+.firebase.json
+database.rules.json
