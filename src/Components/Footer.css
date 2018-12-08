@@ -1,7 +1,8 @@
+/*CSS code for Footer.jsx*/
+
 .Footer
 {
     padding: 2% 0 2% 0;
-    background-color: #f8f8f8;
 }
 
 a
@@ -11,12 +12,12 @@ a
 
 .social-media
 {
-    margin: 0 0 0 6%;
+    margin: 0 0 0 5%;
 
 }
 
 
-.instant,.snap, .mail
+.instant,.twitter, .mail
 {
     padding: 2% 2% 2% 2%;
     font-size: 50px;
@@ -25,12 +26,13 @@ a
     background-color: black;
     border-radius: 10px;
     box-shadow: 0 0 2px #888;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /*Sets transition time for hover */
+    transition-duration: 0.4s; /*Sets transition time for hover */
     margin: 0 auto;
 }
 
-.instant:hover, .snap:hover, .mail:hover
+/*Sets a new colour with a transition delay*/
+.instant:hover, .twitter:hover, .mail:hover
 {
     background-color: #666166;
 }
@@ -38,4 +40,23 @@ a
 p
 {
     text-align: center;
+}
+
+/*Responsive styling*/
+
+@media screen and (min-width:678px) and (max-width: 991px) {
+    .social-media
+    {
+        margin: 0 auto;
+        padding: 0 0 0 35%;
+    }
+
+}
+@media screen and (max-width: 678px) {
+    .social-media
+    {
+        margin: 0;
+        padding: 0 0 0 27.5%;
+    }
+
 }

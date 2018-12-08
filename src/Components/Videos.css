@@ -1,6 +1,8 @@
-.Videos
-{
+/*CSS for Videos.jsx*/
 
+.Videos>h1
+{
+    padding: 2% 0 0 0;
 }
 
 .Description p

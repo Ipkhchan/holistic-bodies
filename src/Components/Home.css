@@ -1,7 +1,13 @@
+/*CSS for home.jsx*/
+
 h1 {
     position: relative;
 }
 
+.Heading
+{
+    display: inline-block;
+}
 
 .Player
 {
@@ -9,12 +15,6 @@ h1 {
     top: 0;
     object-fit: cover;
 }
-
-div
-{
-    object-fit:cover;
-}
-
 
 .video_container
 {
@@ -47,6 +47,7 @@ div
     list-style: none;
     align-items: center;
     color: black;
+    text-align:center;
 }
 
 li {
@@ -58,8 +59,11 @@ hr {
     margin: 25px 0;
     height: 1px;
     background: black;
+    /*used to create a fading break line*/
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
 }
+
+/*responsive styling*/
 
 @media only screen and (min-width: 992px) and  (max-width: 1198px){
 
@@ -92,7 +96,6 @@ hr {
     }
     div.Menu-row {
         padding: 2% 0 0 0;
-        margin: 0 auto;
     }
     div.Heading {
         padding-right: 2%;
@@ -100,19 +103,48 @@ hr {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 478px) and (max-width: 768px) {
 
     .Head-1 {
-        left: 12%;
+        font-size: 28px;
+        padding-top: 25%;
+        /*left:15%;*/
+        left:45%;
     }
 
     .Head-2 {
-        padding-top: 15%;
-        right: 35%;
+        padding-top: 25%;
+        font-size: 28px;
+        right: 60%;
     }
 
     .logo {
-        width: 70%;
+        width: 50%;
         padding-top: 15%;
+        margin: 0 auto;
+    }
+
+    div.Logo-wrapper {
+        padding-right: 5%
+    }
+}
+
+@media only screen and (max-width: 478px) {
+    .Head-1 {
+        font-size: 20px;
+        padding-top: 25%;
+        left:50%;
+    }
+
+    .Head-2 {
+        padding-top: 25%;
+        font-size: 20px;
+        right: 60%;
+    }
+
+    .logo {
+        padding: 20% 5% 0 0;
+        width: 60%;
+        margin: 0 auto;
     }
 }

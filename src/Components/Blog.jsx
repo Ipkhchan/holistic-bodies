@@ -1,5 +1,7 @@
+/*This component is currently not in use*/
+
 import React, { Component } from 'react';
-import {Grid, Row, Col, Button, ResponsiveEmbed} from 'react-bootstrap';
+import {Grid, Row, Col, Button} from 'react-bootstrap'; /*react-bootstrap is used for better formatting and responsiveness of website: https://react-bootstrap.github.io/ */
 import './Blog.css';
 
 class Blog extends Component {
@@ -8,13 +10,7 @@ class Blog extends Component {
             <div className="Blog">
                 <h1>Blog</h1>
                 <Grid>
-{/*                    <Row className="Blog-wrapper-wrap">
-                        <Col md={12} className="Blog-wrapper">
-                            <iframe src ="https://holsiticbodies.blogspot.com/" width="100%" height="900" frameBorder="0" className="Blg">
-                                <p>Your browser does not support iframes.</p>
-                            </iframe>
-                        </Col>
-                    </Row>*/}
+                    {/*Text for blog*/}
                     <Row className="Description-wrapper">
                         <Col md={3} />
                         <Col className="Description" md={6}>
@@ -22,6 +18,7 @@ class Blog extends Component {
                         </Col>
                         <Col md={3} />
                     </Row>
+                    {/*button*/}
                     <Row className="Button-wrapper-wrap">
                         <Col md={3}/>
                         <Col md={6} className="Button-wrapper">

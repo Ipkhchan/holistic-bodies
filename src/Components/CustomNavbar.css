@@ -1,3 +1,5 @@
+/*CSS for CustomNavbar.jsx*/
+
 .Nav
 {
     position: fixed;
@@ -11,6 +13,8 @@ div.navbar-brand a
     text-decoration:none;
     color:#9d9d9d;
 }
+
+/*responsive styling*/
 
 @media only screen and (max-width: 974px) {
     .navbar-brand, .navbar-nav>li>a

@@ -1,7 +1,6 @@
 import React, { Component} from 'react';
-import {Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import {Grid, Row, Col, Image, Button} from 'react-bootstrap'; /*react-bootstrap is used for better formatting and responsiveness of website: https://react-bootstrap.github.io/ */
 import './About.css';
-
 
 
 class About extends Component {
@@ -9,6 +8,7 @@ class About extends Component {
         return (
             <div className="About">
                 <Grid>
+                    {/*mission statment text and blog button*/}
                     <Row className="mission-statement">
                         <h2>Mission Statement</h2>
                         <Col md={1} />
@@ -23,6 +23,7 @@ class About extends Component {
                             <Button className="Bttn" href="https://holsiticbodies.blogspot.com/">Continue to Blog</Button>
                         </Col>
                     </Row>
+                    {/*About text with logo*/}
                     <Row className="about-us">
                         <h2 className="title">About Us</h2>
                         <Col md={6} className="motto-wrapper">
@@ -44,8 +45,9 @@ class About extends Component {
                             </p>
 
                         </Col>
-                        {/*<Col md={1} />*/}
                     </Row>
+
+                    {/*About me text with picture but currently commented out*/}
                    {/* <Row className="about-me">
                         <h2 className="title">About Me</h2>
                         <Col md={1} />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
-import  {Grid, Row, Col} from 'react-bootstrap';
+import ReactPlayer from 'react-player'; /*react-player is used to create a versatile video player with many options: https://www.npmjs.com/package/react-player*/
+import  {Grid, Row, Col} from 'react-bootstrap'; /*react-bootstrap is used for better formatting and responsiveness of website: https://react-bootstrap.github.io/ */
 import './Videos.css';
 
 class Videos extends Component {
@@ -17,6 +17,7 @@ class Videos extends Component {
                         </Col>
                         <Col md={3} />
                     </Row>
+                    {/*contains the style and features of the video player, check documentation for react-player to learn more*/}
                     <Row className="Video-wrapper">
                         <Col md={4} className="Video_1">
                             <ReactPlayer

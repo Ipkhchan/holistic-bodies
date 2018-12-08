@@ -1,13 +1,13 @@
-
-
-.Training-description{
-    text-align: center;
-}
-
+/*CSS code for subscribe.jsx*/
 
 .Subscribe
 {
     padding: 2% 0 2% 0;
+    background-color: #f8f8f8;
+}
+
+.Training-description{
+text-align: center;
 }
 
 .Description
@@ -51,6 +51,33 @@ button:hover
     -moz-transition: prop 0.2s;
     -o-transition: prop 0.2s;
     transition: prop 0.2s;
+}
+
+/*Responsiveness styling*/
+
+@media screen and (min-width: 673px) and (max-width:1199px) {
+    .Form-class {
+        padding: 0;
+        text-align: center;
+    }
+
+    .Form-class> button{
+        margin-left:5%;
+    }
+}
+
+@media screen and (min-width: 479px) and (max-width:673px) {
+    .Form-class {
+        padding: 0;
+        text-align: center;
+        overflow-x: hidden;
+        display: grid;
+        width:50%;
+    }
+
+    .Form-class> button{
+        margin-left:5%;
+    }
 }
 
 @media screen and (max-width: 479px) {

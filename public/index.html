@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128595260-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128595260-1');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -11,6 +21,7 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/Main_Logo.png">
 
+    <!--Quicksand font import-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200, 400|Quicksand" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
@@ -20,7 +31,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Mail Chimp -->
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -64,9 +75,10 @@
       firebase.initializeApp(config);
   </script>
 
-
+  <!--Ecwid integration-->
   <div>
     <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?15086025&data_platform=code&data_date=2018-10-15" charset="utf-8"></script>
     <script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-15086025");</script>
+    <script> (function() { var xhr = new XMLHttpRequest(); xhr.open("GET", "https://10to8.com/pub-api/book-now-button/7d1bc9da-31ea-4c71-8d6a-96f908345f7e/"); xhr.send(); })(); </script>
   </div>
 </html>

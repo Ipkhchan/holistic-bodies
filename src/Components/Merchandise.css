@@ -1,7 +1,8 @@
+/*CSS for Merchandise.jsx*/
+
 .Merchandise
 {
     padding: 2% 0 2% 0;
-    background-color: #f8f8f8;
 }
 
 .Store
@@ -9,9 +10,5 @@
     padding: 1% 0 0 0;
 }
 
-.Description
-{
-
-}
 
 

@@ -1,13 +1,27 @@
+/*CSS for Training.jsx*/
 
 .Training
 {
     padding: 2% 0 2% 0;
     box-sizing: border-box;
+    background-color: #f8f8f8;
 }
 
 h1
 {
-    padding: 0 0 2% 0;
+    padding: 0 0 1% 0;
+}
+
+.Consult
+{
+    display:inline-block;
+    border-radius:5px;
+    border:solid 4px rgba(239, 213, 117, 1);
+    background-color:rgba(239, 213, 117, 1);
+    color:rgba(0, 0, 0, 1);
+    padding:1rem 2rem;
+    cursor:pointer;
+    text-decoration:none;
 }
 
 .Picture-wrapper
@@ -18,6 +32,11 @@ h1
 .Description
 {
     padding: 2% 0 2% 0;
+}
+
+.Button-wrapper
+{
+    padding: 0 0 2% 0;
 }
 
 p
@@ -108,8 +127,38 @@ p
     font-size: 20px;
 }
 
+@media screen and (min-width:748px) and (max-width: 1199px) {
+    .Columns
+    {
+        padding: 3%;
+    }
 
-@media screen and (max-width: 479px) {
+    .Price .Head {
+        font-size: 21px;
+    }
+
+    .Price .Grey {
+        font-size:15px;
+    }
+}
+
+@media screen and (min-width:476px) and (max-width: 748px) {
+    .Columns
+    {
+        padding: 3%;
+    }
+
+    .Price .Head {
+        font-size: 18px;
+    }
+
+    .Price .Grey {
+        font-size:15px;
+    }
+}
+
+
+@media screen and (max-width: 476px) {
 
     .Columns
     {
@@ -121,13 +170,20 @@ p
         width: 100%;
     }
 
+    .Price .Head {
+        font-size: 70%;
+    }
+
+    .Price-text {
+        font-size: 90%;
+    }
+
     .Pack-Heading {
-        align-items: justify;
     }
 
     .Price .Pack-Heading
     {
-        padding: 5% 5% 5% 5%;
+        padding: 5% 10% 5% 21%;
         text-align:justify;
     }
 
@@ -135,7 +191,6 @@ p
     {
         width:100%;
         display: flex;
-        justify-content: justify;
         flex-direction: column;
         word-wrap: break-word;
         padding: 5% 3% 5% 3%;

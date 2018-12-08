@@ -1,3 +1,5 @@
+/*CSS file for About.jsx*/
+
 .About
 {
     padding: 2% 0 5% 0;
@@ -6,7 +8,7 @@
 
 .about-us
 {
-    padding: 2% 0 5% 0;
+    padding: 2% 0 0 0;
 }
 
 .about-us-text
@@ -42,20 +44,21 @@ h1, h2
 .triangle
 {
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     padding-top: 20%;
 }
 
 
-.person-wrapper
-{
-    float: left;
-}
+/*.person-wrapper*/
+/*{*/
+    /*float: left;*/
+    /*padding: 5% 2% 5% 2%;*/
+/*}*/
 
-.about-hussain-text
-{
-    text-align: justify;
-}
+/*.about-hussain-text*/
+/*{*/
+    /*text-align: justify;*/
+/*}*/
 
 p
 {
@@ -64,11 +67,7 @@ p
     text-align: justify;
 }
 
-.person-wrapper{
-    padding: 5% 2% 5% 2%;
-}
-
-.person
+/*.person
 {
     float: left;
     height: 90%;
@@ -77,8 +76,10 @@ p
 
 .person-wrapper .person{
     margin: auto 0;
-}
+}*/
 
+
+/*used this code to create a gradient gold colour for the blog button*/
 .Bttn{
     display: inline-block;
     /*padding: 30px 20px 30px 20px;*/
@@ -107,14 +108,48 @@ p
     background: -moz-linear-gradient(top, #f1e767 0%, #feb645 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #f1e767 0%,#feb645 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #f1e767 0%, #feb645 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
 }
+
+/*For responsiveness*/
+
+@media only screen and (min-width: 479px) and  (max-width: 991px){
+
+    .Bttn-wrapper {
+        text-align: center;
+        padding: 5% 20%;
+    }
+
+    .Bttn, .Bttn-wrapper {
+        width:100%;
+    }
+    .triangle {
+        padding-top: 5%;
+        width: 60%;
+    }
+}
+
+
 
 @media screen and (max-width: 479px) {
 
-    .person{
+/*    .person{
         display: block;
         margin:0 auto;
         padding: 2% 2% 2% 2%;
+    }*/
+
+    .Bttn-wrapper {
+        text-align: center;
+        padding: 5% 20%;
     }
+
+    .Bttn, .Bttn-wrapper {
+        width:100%;
+    }
+
+    .triangle {
+        padding-top: 5%;
+        width: 60%;
+    }
+
 }

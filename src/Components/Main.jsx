@@ -1,6 +1,6 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { Route } from 'react-router-dom' /*used to create a sub url for the terms page, check documentation link in App.jsx*/
+import { BrowserRouter as Router } from 'react-router-dom' /*used to make react a multi page website, check documentation link in App.jsx*/
 import Terms from './Terms'
 
 const Main = () => (
@@ -8,7 +8,6 @@ const Main = () => (
         <Router>
             <Route path='/Terms' component={Terms}/>
         </Router>
-
     </main>
 );
 

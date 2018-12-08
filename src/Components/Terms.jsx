@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col} from "react-bootstrap";
+import {Grid, Row, Col} from "react-bootstrap"; /*react-bootstrap is used for better formatting and responsiveness of website: https://react-bootstrap.github.io/ */
 import './Terms.css';
 
 class Terms extends Component {
