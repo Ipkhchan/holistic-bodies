@@ -6,6 +6,22 @@
     background-color: #f8f8f8;
 }
 
+.Subscribe div button {
+  background-color: #D4AF37;
+  padding: 8px 15px;
+  border: 0;
+  margin: 20px 0;
+}
+
+.Subscribe input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Description .Video-description {
+  text-align: center;
+}
+
 .Training-description{
 text-align: center;
 }
@@ -95,7 +111,3 @@ button:hover
     }
 
 }
-
-
-
-

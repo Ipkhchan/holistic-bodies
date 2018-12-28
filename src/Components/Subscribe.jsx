@@ -13,12 +13,13 @@ class Subscribe extends Component {
                     <Row className="Description-wrapper">
                         <Col md={3} />
                         <Col className="Description" md={6}>
-                            <p className="Video-description">Want to stay updated, and be a part of the community. Don't forget to subscribe</p>
+                            <p className="Video-description">Want to get in touch with me?</p>
                         </Col>
                         <Col md={3} />
                     </Row>
                     {/*creates a mailchimp form, check documentation to learn more*/}
                     <Row className="Field-wrapper-wrap">
+
                         <Col md={2} />
                         <Col className="Form-Wrapper" md={8} >
                             <Mailchimp
@@ -26,23 +27,24 @@ class Subscribe extends Component {
                             fields={[
                                 {
                                     name: 'FNAME',
-                                    placeholder:'First Name',
+                                    placeholder:'  First Name',
                                     type: 'text',
                                     required: true,
                                 },
                                 {
                                     name: 'LNAME',
-                                    placeholder:'Last Name',
+                                    placeholder:'  Last Name',
                                     type: 'text',
                                     required: true
                                 },
                                 {
                                     name: 'EMAIL',
-                                    placeholder:'Email',
+                                    placeholder:'  Email',
                                     type: 'email',
                                     required: true
                                 }
                             ]}
+
                             className="Form-class"
                             />
                         </Col>
@@ -55,3 +57,10 @@ class Subscribe extends Component {
     }
 }
 export default Subscribe;
+
+// {
+//     name: 'MESSAGE',
+//     placeholder:'  Message',
+//     type: 'text',
+//     required: true
+// }

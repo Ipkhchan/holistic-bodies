@@ -23,7 +23,7 @@ class Training extends Component {
     render() {
         return (
             <div className="Training">
-                <h1>Training</h1>
+                <h1>Education</h1>
                 <Grid>
                     <Row className="Description-wrapper">
                         <Col md={2} />

@@ -52,11 +52,6 @@ class App extends Component {
               <div><Route exact path='/' component={Navbar}/></div>
           </Headroom>
 
-          {/*calls videos component with scrollable anchor*/}
-          <ScrollableAnchor id="Videos">
-              <div><Route exact path='/' component={Videos}/></div>
-          </ScrollableAnchor>
-
           {/*calls Training component with scrollable anchor*/}
           <ScrollableAnchor id="Training">
               <div><Route exact path='/' component={Training}/></div>
@@ -65,6 +60,11 @@ class App extends Component {
           {/*calls Merchandise component with scrollable anchor*/}
           <ScrollableAnchor id="Merchandise">
               <div><Route exact path='/' component={Merchandise}/></div>
+          </ScrollableAnchor>
+
+          {/*calls videos component with scrollable anchor*/}
+          <ScrollableAnchor id="Videos">
+              <div><Route exact path='/' component={Videos}/></div>
           </ScrollableAnchor>
 
           {/*calls Subscribe component with scrollable anchor*/}

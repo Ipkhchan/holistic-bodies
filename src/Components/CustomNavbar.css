@@ -8,10 +8,15 @@
     width: 100%;
 }
 
+.navbar {
+  border-radius: 0;
+}
+
 div.navbar-brand a
 {
     text-decoration:none;
     color:#9d9d9d;
+    font-weight: bold;
 }
 
 /*responsive styling*/
@@ -62,7 +67,3 @@ div.navbar-brand a
         overflow: hidden!important;
     }
 }
-
-
-
-
