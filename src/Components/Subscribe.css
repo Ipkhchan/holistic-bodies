@@ -18,6 +18,11 @@
   padding-bottom: 5px;
 }
 
+.Subscribe [name=MESSAGE] {
+  width: 80%;
+  height: 300px;
+}
+
 .Description .Video-description {
   text-align: center;
 }

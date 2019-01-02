@@ -42,8 +42,25 @@ class Subscribe extends Component {
                                     placeholder:'  Email',
                                     type: 'email',
                                     required: true
+                                },
+                                {
+                                    name: 'MESSAGE',
+                                    placeholder:'  Message',
+                                    type: 'text',
+                                    required: false
                                 }
                             ]}
+
+                            message={
+                              {
+                                sending: "Sending...",
+                                success: "Thank you for subscribing!",
+                                error: "An unexpected internal error has occurred.",
+                                empty: "You must write an e-mail.",
+                                duplicate: "Too many subscribe attempts for this email address",
+                                button: "Submit"
+                              }
+                            }
 
                             className="Form-class"
                             />
@@ -57,10 +74,3 @@ class Subscribe extends Component {
     }
 }
 export default Subscribe;
-
-// {
-//     name: 'MESSAGE',
-//     placeholder:'  Message',
-//     type: 'text',
-//     required: true
-// }
