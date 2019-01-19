@@ -7,6 +7,29 @@
     background-color: #f8f8f8;
 }
 
+.hoverOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: inherit;
+  background-clip: content-box;
+  opacity: 0;
+}
+
+.hoverOverlay:hover {
+  opacity: 1;
+  background-color: rgba(212, 175, 55, .7);
+}
+
+.Training .hoverOverlay p {
+  padding: 7px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
 h1
 {
     padding: 0 0 1% 0;
@@ -206,4 +229,15 @@ p
         padding: 0 5% 5% 5%;
 
     }
+}
+
+@media screen and (max-width: 991px) {
+  .Training img, .hoverOverlay {
+    margin: 10px 0;
+  }
+
+  .Training .hoverOverlay p {
+    font-size: 2vw;
+  }
+
 }

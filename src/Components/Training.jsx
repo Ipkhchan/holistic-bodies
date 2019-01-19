@@ -45,14 +45,44 @@ class Training extends Component {
                         <Col md={3}/>
                     </Row>
                     <Row className="Picture-wrapper">
-                        <Col md={1} sm={0} xs={0}/>
-                        <Col className="Picture1-wrapper" xs={6} sm={6} md={5}>
-                            <Image src="assets/Picture_4(1).jpg" responsive className="Picture_1"/>
+                        {/* <Col xs={0} sm={0} md={1}  /> */}
+                        <Col className="Picture1-wrapper" xs={6} sm={6} md={3}>
+                            <Image src="assets/Picture_1.jpg" responsive className="Picture_1"/>
+                            <div className="hoverOverlay flex-column flex-justify-center">
+                              <p>Adopt a wining mindset. Don't settle for less. Regardless of any obstacle
+                                 you might be facing, you can accomplish your goals with a results coach by
+                                 your side! SIGN UP FOR A FREE SESSION.
+                              </p>
+                            </div>
                         </Col>
-                        <Col className="Picture2-wrapper" xs={6} sm={6} md={5}>
+                        <Col className="Picture2-wrapper" xs={6} sm={6} md={3}>
                             <Image src="assets/Training_2.jpg" responsive className="Picture_2"/>
+                            <div className="hoverOverlay flex-column flex-justify-center">
+                              <p>Elevate your health and well-being. Challenge the status quo. To live long
+                                 must understand the benefits. You can tackle your aim with a qualified coach
+                                 by your side! SIGN UP FOR A FREE SESSION.
+                              </p>
+                            </div>
                         </Col>
-                        <Col md={1} sm={0} xs={0}/>
+                        <Col className="Picture3-wrapper" xs={6} sm={6} md={3}>
+                            <Image src="assets/Picture_3_cropped.jpg" responsive className="Picture_3"/>
+                            <div className="hoverOverlay flex-column flex-justify-center">
+                              <p>Improve your personal life. Rise above adversity. Motivation is essential to
+                                 taking action and accomplishing your goals, and a coach can help you navigate
+                                 these sensitive roads. SIGN UP FOR A FREE SESSION.
+                              </p>
+                            </div>
+                        </Col>
+                        <Col className="Picture4-wrapper" xs={6} sm={6} md={3}>
+                            <Image src="assets/Picture_4_cropped.jpg" responsive className="Picture_4"/>
+                            <div className="hoverOverlay flex-column flex-justify-center">
+                              <p>Create emotional accountability. Create deep abundance. Becoming the hero of
+                                 your own life starts with accountability, with someone understanding by your
+                                 side, hard emotions become easier to channel. SIGN UP TODAY TO LEARN HOW!
+                              </p>
+                            </div>
+                        </Col>
+                        {/* <Col xs={0} sm={0} md={1}  /> */}
                     </Row>
 
                     {/*Panels that contain the training packages but is currently not in use*/}

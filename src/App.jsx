@@ -6,6 +6,7 @@ import './App.css'; /*CSS for app.jsx*/
 import Navbar from './Components/CustomNavbar' /*Navbar component*/
 import Home from './Components/Home'; /*Home Component*/
 import About from './Components/About'; /*About Component*/
+import Blog from './Components/Blog'; /*Blog Component*/
 import Videos from './Components/Videos'; /*Video page component*/
 import Merchandise from './Components/Merchandise'; /*Merchandise store component*/
 import Training from './Components/Training'; /*Training component */
@@ -41,6 +42,11 @@ class App extends Component {
           {/*calls About component with scrollable anchor*/}
           <ScrollableAnchor id="About">
               <div><Route exact path='/' component={About}/></div>
+          </ScrollableAnchor>
+
+          {/*calls Blog component with scrollable anchor*/}
+          <ScrollableAnchor id="Blog">
+              <div><Route exact path='/' component={Blog}/></div>
           </ScrollableAnchor>
 
           {/*calls Home component with scrollable anchor with headroom to hide navbar till its needed*/}

@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Col, Grid, Row} from "react-bootstrap"; /*react-bootstrap is used for better formatting and responsiveness of website: https://react-bootstrap.github.io/ */
+import React, { Component } from 'react';
+import { Col, Grid, Row } from "react-bootstrap"; /*react-bootstrap is used for better formatting and responsiveness of website: https://react-bootstrap.github.io/ */
 import './Home.css';
 import ReactPlayer from 'react-player'; /*react-player is used to create a versatile video player with many options: https://www.npmjs.com/package/react-player*/
 
@@ -22,7 +22,7 @@ class Home_Videos extends Component {
                                     url="/assets/LandingPageVideo.mp4"
                                     width="100%"
                                     height="100%"
-                                    controls/>
+                                    controls />
                             </div>
                         </Col>
                     </Row>
@@ -32,3 +32,5 @@ class Home_Videos extends Component {
     }
 }
 export default Home_Videos;
+
+

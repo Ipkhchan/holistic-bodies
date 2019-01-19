@@ -11,17 +11,17 @@ class About extends Component {
                     {/*mission statment text and blog button*/}
                     <Row className="mission-statement">
                         <h2>Mission Statement</h2>
-                        <Col md={1} />
-                        <Col md={10} className="mission-statement-wrapper">
+                        { /* <Col md={1} /> */}
+                        <Col md={12} className="mission-statement-wrapper">
                             <p className="mission-statement-text"><b>"Holistic bodies is about redefining strength, we are here to educate you about how strength plays a
                                 vital role in our lives, our goal is to empower you to make decisions that can lead you to live a
                                 fulfilled and purposeful life. We want you to enjoy your life through the means of something already
                                 exists within you. Strength."
                             </b></p>
                         </Col>
-                        <Col md={1} className="Bttn-wrapper" >
+                        { /* <Col md={1} className="Bttn-wrapper" >
                             <Button className="Bttn" href="https://holsiticbodies.blogspot.com/">Continue to Blog</Button>
-                        </Col>
+                        </Col> */}
                     </Row>
                     {/*About text with logo*/}
                     <Row className="about-us">

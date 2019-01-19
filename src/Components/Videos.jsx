@@ -2,8 +2,35 @@ import React, { Component } from 'react';
 import ReactPlayer from 'react-player'; /*react-player is used to create a versatile video player with many options: https://www.npmjs.com/package/react-player*/
 import  {Grid, Row, Col} from 'react-bootstrap'; /*react-bootstrap is used for better formatting and responsiveness of website: https://react-bootstrap.github.io/ */
 import './Videos.css';
+import axios from 'axios';
 
 class Videos extends Component {
+    componentDidMount() {
+      console.log("here");
+      axios({
+        method: 'GET',
+        url: 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyDoNAkazWSrZlEnqDZkP4fVT7qfarjP_As',
+        headers: {'maxResults': '25',
+                 'forMine': 'true',
+                 'part': 'snippet',
+                 'q': '',
+                 'type': 'video'}
+      }).then((results) => {
+        console.log("youtube", results);
+        // let blogPosts = [];
+        //
+        // for (let i = 0; i <= 2; i++) {
+        //   const content = results.data.items[i].content;
+        //   const title = results.data.items[i].title;
+        //   const image = /<img.*>/.exec(content) ? /src=".*"/.exec(/<img.*>/.exec(content)[0])[0].slice(5).split('"')[0] : "./assets/Default_Blog_Image.png";
+        //   const url = results.data.items[i].url;
+        //   blogPosts.push({image: image, title: title, url: url});
+        // }
+        // console.log("blogPosts", blogPosts);
+        // this.setState({blogPosts: blogPosts});
+      })
+    }
+
     render() {
         return (
             <div className="Videos">
@@ -12,8 +39,8 @@ class Videos extends Component {
                     <Row className="Description-wrapper">
                         <Col md={3} />
                         <Col className="Description" md={6}>
-                            <p>This is the video section where you can find some videos from my
-                            upcoming video series</p>
+                            <p>Check out some videos from my
+                            upcoming video series.</p>
                         </Col>
                         <Col md={3} />
                     </Row>
@@ -51,6 +78,10 @@ class Videos extends Component {
 }
 
 export default Videos;
+
+// buildApiRequest('GET',
+//                 '/youtube/v3/search',
+// );
 
 
 // "assets/EDUCATE.mp4"

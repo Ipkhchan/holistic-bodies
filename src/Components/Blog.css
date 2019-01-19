@@ -22,3 +22,57 @@ p
     text-align: justify;
 }
 
+.Blog h1 {
+  margin-bottom: 30px;
+}
+
+.Blog .blogpost {
+  margin-bottom: 30px;
+}
+
+.Blog img {
+  width: 100%;
+  border: 3px solid black;
+}
+
+.Blog .img-container {
+  width: 100%;
+  position: relative;
+}
+
+.Blog .hoverOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: inherit;
+  background-clip: content-box;
+  margin: 0;
+}
+
+.hoverOverlay:hover {
+  background-color: rgba(212, 175, 55, .5);
+  cursor: pointer;
+}
+
+.Blog h4 {
+  font-weight: bold;
+}
+
+.Blog .blogTitle {
+  margin-top: 15px;
+}
+
+.Blog a {
+  color: black;
+  text-decoration: none;
+}
+
+.Blog a:hover {
+  color: #D4AF37;
+}
+
+/* .Blog * {
+  border: 3px solid black;
+} */
