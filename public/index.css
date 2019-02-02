@@ -1,4 +1,5 @@
-body div[data-wzb=ContactForm] {
+body div[data-wzb='ContactForm'],
+[id^='ztb_contact_form'] {
   display: none !important;
 }
 

@@ -1,243 +1,292 @@
 /*CSS for Training.jsx*/
 
-.Training
-{
-    padding: 2% 0 2% 0;
-    box-sizing: border-box;
-    background-color: #f8f8f8;
+.Training {
+  padding: 2% 0 2% 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
 }
 
-.hoverOverlay {
+.Training img {
+  opacity: 0.4;
+  width: 100%;
+}
+
+.Training .Picture-wrapper > div {
+  padding: 0 0 40px 0;
+}
+
+.TextOverlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: inherit;
   background-clip: content-box;
-  opacity: 0;
-}
-
-.hoverOverlay:hover {
-  opacity: 1;
-  background-color: rgba(212, 175, 55, .7);
-}
-
-.Training .hoverOverlay p {
-  padding: 7px;
-  font-size: 12px;
-  font-weight: bold;
   margin: 0;
+  font-weight: bold;
+  padding: inherit;
+  transition: background-color 400ms;
 }
 
-h1
-{
-    padding: 0 0 1% 0;
+.TextOverlay div {
+  padding: 3vw;
 }
 
-.Consult
-{
-    display:inline-block;
-    border-radius:5px;
-    border:solid 4px rgba(239, 213, 117, 1);
-    background-color:rgba(239, 213, 117, 1);
-    color:rgba(0, 0, 0, 1);
-    padding:1rem 2rem;
-    cursor:pointer;
-    text-decoration:none;
+.TextOverlay h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
 }
 
-.Picture-wrapper
-{
-    padding: 2% 2% 2% 2%;
+.TextOverlay p {
+  font-size: 14px;
+  padding-bottom: 15px;
 }
 
-.Description
-{
-    padding: 2% 0 2% 0;
+.TextOverlay .ButtonContainer {
+  padding: 0;
 }
 
-.Button-wrapper
-{
-    padding: 0 0 2% 0;
+.TextOverlay button {
+  margin: 0;
+  background: transparent;
+  color: black;
+  border: 1.5px solid black;
+  padding: 5px 10px;
+  transition: background-color 400ms;
+  transition: color 400ms;
+  font-weight: 400;
 }
 
-p
-{
-    text-align: justify;
+.TextOverlay button:hover {
+  background-color: black;
+  color: white;
 }
 
-.Title-Heading
-{
-    text-align:justify;
+.TextOverlay:hover {
+  background-color: rgba(212, 175, 55, 0.7);
+
+  cursor: pointer;
 }
 
-.Column
-{
-    margin: 0 auto;
-    width: 50%;
-    padding: 1%;
-    position: relative;
+h1 {
+  padding: 0 0 1% 0;
 }
 
-.Columns
-{
-    margin: 0 auto;
-    float:left;
-    width: 50%;
-    padding: 1%;
-    position: relative;
+.Consult {
+  display: inline-block;
+  border-radius: 5px;
+  border: solid 4px rgba(239, 213, 117, 1);
+  background-color: rgba(239, 213, 117, 1);
+  color: rgba(0, 0, 0, 1);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.Price
-{
-    border: 1px solid #eee;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+.Picture-wrapper {
+  padding: 2% 2% 2% 2%;
 }
 
+.Description {
+  padding: 2% 0 2% 0;
+}
+
+.Button-wrapper {
+  padding: 0 0 2% 0;
+}
+
+p {
+  text-align: center;
+}
+
+.Title-Heading {
+  text-align: justify;
+}
+
+.Column {
+  margin: 0 auto;
+  width: 50%;
+  padding: 1%;
+  position: relative;
+}
+
+.Columns {
+  margin: 0 auto;
+  float: left;
+  width: 50%;
+  padding: 1%;
+  position: relative;
+}
+
+.Price {
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 
 /* Add shadows on hover */
-.Price:hover
-{
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+.Price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Pricing header */
-.Price .Head
-{
-    background-color: #2f2f2f;
-    color: white;
-    font-size: 25px;
+.Price .Head {
+  background-color: #2f2f2f;
+  color: white;
+  font-size: 25px;
 }
 
-.Price .Pack-Heading
-{
-    padding: 5% 10% 5% 21%;
+.Price .Pack-Heading {
+  padding: 5% 10% 5% 21%;
 }
 
-.Price .Price-Tag
-{
-    padding: 0 0 0 25%;
-    margin: 0 auto;
+.Price .Price-Tag {
+  padding: 0 0 0 25%;
+  margin: 0 auto;
 }
 
-.Price .Pack-Heading-lg
-{
-    padding: 5% 5% 5% 5%;
+.Price .Pack-Heading-lg {
+  padding: 5% 5% 5% 5%;
 }
 
-.Price .Price-Tag-lg
-{
-    margin: 0 auto;
-    padding: 0 0 2% 25%;
+.Price .Price-Tag-lg {
+  margin: 0 auto;
+  padding: 0 0 2% 25%;
 }
 
 /* List items */
-.Price li
-{
-    border-bottom: 1px solid #eee;
-    padding: 10%;
-    text-align: justify;
+.Price li {
+  border-bottom: 1px solid #eee;
+  padding: 10%;
+  text-align: justify;
 }
 
 /* Grey list item */
-.Price .Grey
-{
-    background-color: #eee;
-    font-size: 20px;
+.Price .Grey {
+  background-color: #eee;
+  font-size: 20px;
 }
 
-@media screen and (min-width:748px) and (max-width: 1199px) {
-    .Columns
-    {
-        padding: 3%;
-    }
+@media screen and (min-width: 748px) and (max-width: 1199px) {
+  .Columns {
+    padding: 3%;
+  }
 
-    .Price .Head {
-        font-size: 21px;
-    }
+  .Price .Head {
+    font-size: 21px;
+  }
 
-    .Price .Grey {
-        font-size:15px;
-    }
+  .Price .Grey {
+    font-size: 15px;
+  }
 }
 
-@media screen and (min-width:476px) and (max-width: 748px) {
-    .Columns
-    {
-        padding: 3%;
-    }
+@media screen and (min-width: 476px) and (max-width: 748px) {
+  .Columns {
+    padding: 3%;
+  }
 
-    .Price .Head {
-        font-size: 18px;
-    }
+  .Price .Head {
+    font-size: 18px;
+  }
 
-    .Price .Grey {
-        font-size:15px;
-    }
+  .Price .Grey {
+    font-size: 15px;
+  }
 }
-
 
 @media screen and (max-width: 476px) {
+  .Columns {
+    padding: 1% 1% 1% 1%;
+    position: relative;
+  }
 
-    .Columns
-    {
-        padding: 1% 1% 1% 1%;
-        position: relative;
-    }
+  .Columns .Column {
+    width: 100%;
+  }
 
-    .Columns .Column{
-        width: 100%;
-    }
+  .Price .Head {
+    font-size: 70%;
+  }
 
-    .Price .Head {
-        font-size: 70%;
-    }
+  .Price-text {
+    font-size: 90%;
+  }
 
-    .Price-text {
-        font-size: 90%;
-    }
+  .Pack-Heading {
+  }
 
-    .Pack-Heading {
-    }
+  .Price .Pack-Heading {
+    padding: 5% 10% 5% 21%;
+    text-align: justify;
+  }
 
-    .Price .Pack-Heading
-    {
-        padding: 5% 10% 5% 21%;
-        text-align:justify;
-    }
+  .Price .Pack-Heading-lg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    padding: 5% 3% 5% 3%;
+  }
 
-    .Price .Pack-Heading-lg
-    {
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        word-wrap: break-word;
-        padding: 5% 3% 5% 3%;
-    }
-
-    .Price .Price-Tag{
-        margin: 0 auto;
-        padding: 0 5% 0 5%;
-
-    }
-    .Price .Price-Tag-lg{
-        margin: 0 auto;
-        padding: 0 5% 5% 5%;
-
-    }
+  .Price .Price-Tag {
+    margin: 0 auto;
+    padding: 0 5% 0 5%;
+  }
+  .Price .Price-Tag-lg {
+    margin: 0 auto;
+    padding: 0 5% 5% 5%;
+  }
 }
 
 @media screen and (max-width: 991px) {
-  .Training img, .hoverOverlay {
-    margin: 10px 0;
+  .TextOverlay div {
+    padding: 2vw;
   }
 
-  .Training .hoverOverlay p {
-    font-size: 2vw;
+  .TextOverlay h3 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 7px;
   }
 
+  .TextOverlay p {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+
+  .TextOverlay button {
+    margin: 0;
+    background: transparent;
+    color: black;
+    border: 1.5px solid black;
+    padding: 5px 10px;
+    transition: background-color 400ms;
+    transition: color 400ms;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .Picture-wrapper {
+    padding: 0;
+  }
+
+  .Training .Picture-wrapper > div {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .TextOverlay {
+    display: flex;
+    align-items: center;
+  }
+
+  .TextOverlay > div {
+    padding: 0 20vw;
+  }
 }

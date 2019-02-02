@@ -6,13 +6,20 @@ body {
   text-align: justify;
 }
 /*define font as montserrat for h1,h2,li*/
-h1, h2, li
-{
+h1,
+h2,
+li {
   font-family: 'Montserrat', sans-serif;
 }
 /*define font as Quicksand for P*/
-p
-{
+p {
   font-family: 'Quicksand', sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+}
