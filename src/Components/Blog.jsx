@@ -46,7 +46,7 @@ class Blog extends Component {
       <div className="Blog">
         <h1>Blog</h1>
         <Grid>
-          <Row>
+          <Row className="BlogsContainer">
             {this.state.blogPosts.map(blogPost => (
               <Col sm={4} className="blogpost">
                 <div className="img-container">

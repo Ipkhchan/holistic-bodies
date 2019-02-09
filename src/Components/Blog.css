@@ -1,25 +1,21 @@
 /*CSS for blog.jsx*/
 
-.Blog
-{
-    padding: 2% 0 2% 0;
-    background-color: #f8f8f8;
+.Blog {
+  padding: 2% 0 2% 0;
+  background-color: #f8f8f8;
 }
 
-.Blg
-{
-    padding: 5% 0 5% 0;
-    width: 100%;
+.Blg {
+  padding: 5% 0 5% 0;
+  width: 100%;
 }
 
-.Description
-{
-    padding: 2% 0 2% 0;
+.Description {
+  padding: 2% 0 2% 0;
 }
 
-p
-{
-    text-align: justify;
+p {
+  text-align: justify;
 }
 
 .Blog h1 {
@@ -28,6 +24,18 @@ p
 
 .Blog .blogpost {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 850px) {
+  .BlogsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Blog .blogpost {
+    width: 80%;
+  }
 }
 
 .Blog img {
@@ -52,7 +60,7 @@ p
 }
 
 .hoverOverlay:hover {
-  background-color: rgba(212, 175, 55, .5);
+  background-color: rgba(212, 175, 55, 0.5);
   cursor: pointer;
 }
 
@@ -70,7 +78,7 @@ p
 }
 
 .Blog a:hover {
-  color: #D4AF37;
+  color: #d4af37;
 }
 
 /* .Blog * {

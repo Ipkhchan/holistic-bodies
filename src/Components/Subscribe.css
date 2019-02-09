@@ -1,13 +1,12 @@
 /*CSS code for subscribe.jsx*/
 
-.Subscribe
-{
-    padding: 2% 0 2% 0;
-    background-color: #f8f8f8;
+.Subscribe {
+  padding: 2% 0 2% 0;
+  background-color: #f8f8f8;
 }
 
 .Subscribe div button {
-  background-color: #D4AF37;
+  background-color: #d4af37;
   padding: 8px 15px;
   border: 0;
   margin: 20px 0;
@@ -18,7 +17,7 @@
   padding-bottom: 5px;
 }
 
-.Subscribe [name=MESSAGE] {
+.Subscribe [name='MESSAGE'] {
   width: 80%;
   height: 300px;
 }
@@ -27,56 +26,62 @@
   text-align: center;
 }
 
-.Training-description{
+.Training-description {
   text-align: center;
 }
 
-.Description
-{
-    padding: 2% 0 2% 0;
+.Description {
+  padding: 2% 0 2% 0;
 }
 
-p
-{
-    text-align: center;
+p {
+  text-align: center;
 }
 
-.Form-class
-{
-    padding: 0 0 2% 10%;
-    margin: 0 auto;
+.Form-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Form-class input
-{
-    margin: 2% 2% 2% 2%;
+@media screen and (max-width: 748px) {
+  .Form-class {
+    flex-direction: column;
+  }
 }
 
-.msg-alert p
-{
-    margin: 0 auto;
-    padding: 5% 20% 0 2%;
+.Form-class input {
+  margin: 2% 2% 2% 2%;
 }
 
-.Form-class button
-{
-    border-radius: 10px;
-    background-color: #eeeeee;
-    margin-left: 40%;
+@media screen and (max-width: 748px) {
+  .Form-class input {
+    width: 80%;
+  }
 }
 
-button:hover
-{
-    background-color: #f8f8f8;
-    -webkit-transition: prop 0.2s;
-    -moz-transition: prop 0.2s;
-    -o-transition: prop 0.2s;
-    transition: prop 0.2s;
+.msg-alert p {
+  margin: 0 auto;
+  padding: 5% 20% 0 2%;
+}
+
+.Form-class button {
+  border-radius: 10px;
+  background-color: #eeeeee;
+  margin-left: 40%;
+}
+
+button:hover {
+  background-color: #f8f8f8;
+  -webkit-transition: prop 0.2s;
+  -moz-transition: prop 0.2s;
+  -o-transition: prop 0.2s;
+  transition: prop 0.2s;
 }
 
 /*Responsiveness styling*/
 
-@media screen and (min-width: 673px) and (max-width:1199px) {
+/* @media screen and (min-width: 673px) and (max-width:1199px) {
     .Form-class {
         padding: 0;
         text-align: center;
@@ -115,4 +120,4 @@ button:hover
 
     }
 
-}
+} */
