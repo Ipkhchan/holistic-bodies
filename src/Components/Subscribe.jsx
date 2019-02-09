@@ -15,33 +15,33 @@ class Subscribe extends Component {
         <Grid>
           <Row className="Description-wrapper">
             <Col md={3} />
-            <Col className="Description" md={6}>
+            {/* <Col className="Description" md={6}>
               <p className="Video-description">Want to get in touch with me?</p>
-            </Col>
+            </Col> */}
             <Col md={3} />
           </Row>
           {/*creates a mailchimp form, check documentation to learn more*/}
           <Row className="Field-wrapper-wrap">
             <Col md={2} />
-            <Col className="Form-Wrapper" md={8}>
+            <Col className="Form-Wrapper" md={12}>
               <Mailchimp
                 action="https://facebook.us19.list-manage.com/subscribe/post?u=f63cb56768fba0c0f62eb7e2b&amp;id=01f405136b"
                 fields={[
                   {
                     name: 'FNAME',
-                    placeholder: '  First Name',
+                    placeholder: ' First Name',
                     type: 'text',
                     required: true,
                   },
                   {
                     name: 'LNAME',
-                    placeholder: '  Last Name',
+                    placeholder: ' Last Name',
                     type: 'text',
                     required: true,
                   },
                   {
                     name: 'EMAIL',
-                    placeholder: '  Email',
+                    placeholder: ' Email',
                     type: 'email',
                     required: true,
                   },
