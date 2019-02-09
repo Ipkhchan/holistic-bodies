@@ -18,25 +18,6 @@ class Training extends Component {
       showBooking: false,
     };
   }
-  /*Back-end code for panel functionality, but Panel is currently not in use*/
-
-  /*    constructor(props, context) {
-        super(props, context);
-
-        this.handleSelect = this.handleSelect.bind(this);
-
-        this.state = {
-            open: false
-        };
-    }
-
-    handleSelect(activeKey) {
-        this.setState({activeKey});
-    }*/
-
-  handleClick = () => {
-    console.log('here');
-  };
 
   toggleBooking = () => {
     const { showBooking } = this.state;
@@ -101,11 +82,9 @@ class Training extends Component {
                     be facing, you can accomplish your goals with a results
                     coach by your side!
                   </p>
-                  <div className="ButtonContainer flex flex-center">
-                    <button type="button" onClick={this.toggleBooking}>
-                      Free Consultation- Book Now
-                    </button>
-                  </div>
+                  <button type="button" onClick={this.toggleBooking}>
+                    Free Consultation- Book Now
+                  </button>
                 </div>
               </div>
             </Col>
@@ -123,11 +102,9 @@ class Training extends Component {
                     benefits. You can tackle your aim with a qualified coach by
                     your side!
                   </p>
-                  <div className="ButtonContainer flex flex-center">
-                    <button type="button" onClick={this.toggleBooking}>
-                      Free Consultation- Book Now
-                    </button>
-                  </div>
+                  <button type="button" onClick={this.toggleBooking}>
+                    Free Consultation- Book Now
+                  </button>
                 </div>
               </div>
             </Col>
@@ -145,11 +122,9 @@ class Training extends Component {
                     action and accomplishing your goals, and a coach can help
                     you navigate these sensitive roads.
                   </p>
-                  <div className="ButtonContainer flex flex-center">
-                    <button type="button" onClick={this.toggleBooking}>
-                      Free Consultation- Book Now
-                    </button>
-                  </div>
+                  <button type="button" onClick={this.toggleBooking}>
+                    Free Consultation- Book Now
+                  </button>
                 </div>
               </div>
             </Col>
@@ -167,11 +142,9 @@ class Training extends Component {
                     starts with accountability, with someone understanding by
                     your side, hard emotions become easier to channel.
                   </p>
-                  <div className="ButtonContainer flex flex-center">
-                    <button type="button" onClick={this.toggleBooking}>
-                      Free Consultation- Book Now
-                    </button>
-                  </div>
+                  <button type="button" onClick={this.toggleBooking}>
+                    Free Consultation- Book Now
+                  </button>
                 </div>
               </div>
             </Col>

@@ -30,6 +30,10 @@
 
 .TextOverlay div {
   padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .TextOverlay h3 {
@@ -40,11 +44,7 @@
 
 .TextOverlay p {
   font-size: 14px;
-  padding-bottom: 15px;
-}
-
-.TextOverlay .ButtonContainer {
-  padding: 0;
+  padding: 0 10px;
 }
 
 .TextOverlay button {
@@ -52,10 +52,10 @@
   background: transparent;
   color: black;
   border: 1.5px solid black;
-  padding: 5px 10px;
+  padding: 5px 10px 6px 10px;
   transition: background-color 400ms;
   transition: color 400ms;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .TextOverlay button:hover {
@@ -244,7 +244,7 @@ p {
 
 @media screen and (max-width: 991px) {
   .TextOverlay div {
-    padding: 2vw;
+    padding: 3vw;
   }
 
   .TextOverlay h3 {
@@ -287,6 +287,14 @@ p {
   }
 
   .TextOverlay > div {
-    padding: 0 20vw;
+    padding: 0 25vw;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .TextOverlay > div {
+    padding: 0 10vw;
+    justify-content: center;
   }
 }

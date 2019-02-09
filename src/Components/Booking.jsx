@@ -3,20 +3,10 @@ import './Booking.css';
 import Mailchimp from 'react-mailchimp-form'; /*this package uses the Mailchimp API to make a sign up form within the page rather then a pop-up: https://www.npmjs.com/package/react-mailchimp-form */
 
 class Booking extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     show: true,
-  //   };
-  // }
-
-  // handleClose = () => {
-  //   this.setState({ show: false });
-  // };
-
-  // handleShow = () => {
-  //   this.setState({ show: true });
-  // };
+  componentDidMount() {
+    const formButton = document.querySelector('.BookingPopup form button');
+    formButton.textContent = 'Submit';
+  }
 
   render() {
     const { handleClick, toggleBooking } = this.props;
@@ -35,19 +25,19 @@ class Booking extends React.Component {
           fields={[
             {
               name: 'FNAME',
-              placeholder: '  First Name: ',
+              placeholder: 'First Name:',
               type: 'text',
               required: true,
             },
             {
               name: 'LNAME',
-              placeholder: '  Last Name: ',
+              placeholder: 'Last Name:',
               type: 'text',
               required: true,
             },
             {
               name: 'EMAIL',
-              placeholder: '  Email: ',
+              placeholder: 'Email:',
               type: 'email',
               required: true,
             },
@@ -62,6 +52,90 @@ class Booking extends React.Component {
           }}
           className="Form-class"
         />
+
+        {/* <div id="mc_embed_signup">
+          <form
+            action="https://facebook.us19.list-manage.com/subscribe/post?u=f63cb56768fba0c0f62eb7e2b&amp;id=01f405136b"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            className="validate"
+            target="_blank"
+            novalidate
+          >
+            <div id="mc_embed_signup_scroll">
+              <h2>Subscribe to our mailing list</h2>
+              <div className="indicates-required">
+                <span className="asterisk">*</span> indicates required
+              </div>
+              <div className="mc-field-group">
+                <label for="mce-EMAIL">
+                  Email Address
+                  <span class="asterisk">*</span>
+                </label>
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                />
+              </div>
+              <div className="mc-field-group">
+                <label for="mce-FNAME">First Name </label>
+                <input
+                  type="text"
+                  value=""
+                  name="FNAME"
+                  className=""
+                  id="mce-FNAME"
+                />
+              </div>
+              <div className="mc-field-group">
+                <label for="mce-LNAME">Last Name </label>
+                <input
+                  type="text"
+                  value=""
+                  name="LNAME"
+                  className=""
+                  id="mce-LNAME"
+                />
+              </div>
+              <div id="mce-responses" className="clear">
+                <div
+                  className="response"
+                  id="mce-error-response"
+                  style="display:none"
+                />
+                <div
+                  className="response"
+                  id="mce-success-response"
+                  style="display:none"
+                />
+              </div>
+              <div
+                style={{ position: 'absolute', left: '-5000px' }}
+                aria-hidden="true"
+              >
+                <input
+                  type="text"
+                  name="b_f63cb56768fba0c0f62eb7e2b_01f405136b"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div className="clear">
+                <input
+                  type="submit"
+                  value="Submit"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  className="button"
+                />
+              </div>
+            </div>
+          </form>
+        </div> */}
       </div>
     );
   }

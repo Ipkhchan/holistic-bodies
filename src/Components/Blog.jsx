@@ -37,7 +37,6 @@ class Blog extends Component {
         const url = results.data.items[i].url;
         blogPosts.push({ image: image, title: title, url: url });
       }
-      console.log('blogPosts', blogPosts);
       this.setState({ blogPosts: blogPosts });
     });
   }
