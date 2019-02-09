@@ -10,6 +10,7 @@ import Blog from './Components/Blog'; /*Blog Component*/
 import Videos from './Components/Videos'; /*Video page component*/
 import Merchandise from './Components/Merchandise'; /*Merchandise store component*/
 import Training from './Components/Training'; /*Training component */
+import Testimonials from './Components/Testimonials';
 import Subscribe from './Components/Subscribe'; /*Subscribe component*/
 import Footer from './Components/Footer'; /*Footer component (contains the contact information)*/
 import Foot from './Components/Foot'; /*Foot component (contains the terms and conditions)*/
@@ -70,6 +71,12 @@ class App extends Component {
         <ScrollableAnchor id="Training">
           <div>
             <Route exact path="/" component={Training} />
+          </div>
+        </ScrollableAnchor>
+
+        <ScrollableAnchor id="Testimonials">
+          <div>
+            <Route exact path="/" component={Testimonials} />
           </div>
         </ScrollableAnchor>
 
