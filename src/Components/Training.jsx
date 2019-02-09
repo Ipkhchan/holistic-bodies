@@ -9,8 +9,15 @@ import {
   Image,
 } from 'react-bootstrap'; /*react-bootstrap is used for better formatting and responsiveness of website: https://react-bootstrap.github.io/ */
 import './Training.css';
+import Booking from './Booking';
 
 class Training extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showBooking: false,
+    };
+  }
   /*Back-end code for panel functionality, but Panel is currently not in use*/
 
   /*    constructor(props, context) {
@@ -27,9 +34,29 @@ class Training extends Component {
         this.setState({activeKey});
     }*/
 
+  handleClick = () => {
+    console.log('here');
+  };
+
+  toggleBooking = () => {
+    const { showBooking } = this.state;
+
+    showBooking
+      ? this.setState({ showBooking: false })
+      : this.setState({ showBooking: true });
+  };
+
   render() {
+    const { showBooking } = this.state;
+
     return (
       <div className="Training">
+        {showBooking && (
+          <Booking
+            handleClick={this.handleClick}
+            toggleBooking={this.toggleBooking}
+          />
+        )}
         <h1>Education</h1>
         <Grid>
           <Row className="Description-wrapper">
@@ -75,7 +102,9 @@ class Training extends Component {
                     coach by your side!
                   </p>
                   <div className="ButtonContainer flex flex-center">
-                    <button type="button">Free Consultation- Book Now</button>
+                    <button type="button" onClick={this.toggleBooking}>
+                      Free Consultation- Book Now
+                    </button>
                   </div>
                 </div>
               </div>
@@ -95,7 +124,9 @@ class Training extends Component {
                     your side!
                   </p>
                   <div className="ButtonContainer flex flex-center">
-                    <button type="button">Free Consultation- Book Now</button>
+                    <button type="button" onClick={this.toggleBooking}>
+                      Free Consultation- Book Now
+                    </button>
                   </div>
                 </div>
               </div>
@@ -115,7 +146,9 @@ class Training extends Component {
                     you navigate these sensitive roads.
                   </p>
                   <div className="ButtonContainer flex flex-center">
-                    <button type="button">Free Consultation- Book Now</button>
+                    <button type="button" onClick={this.toggleBooking}>
+                      Free Consultation- Book Now
+                    </button>
                   </div>
                 </div>
               </div>
@@ -135,7 +168,9 @@ class Training extends Component {
                     your side, hard emotions become easier to channel.
                   </p>
                   <div className="ButtonContainer flex flex-center">
-                    <button type="button">Free Consultation- Book Now</button>
+                    <button type="button" onClick={this.toggleBooking}>
+                      Free Consultation- Book Now
+                    </button>
                   </div>
                 </div>
               </div>

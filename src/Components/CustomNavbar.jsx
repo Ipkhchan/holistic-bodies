@@ -47,12 +47,12 @@ export default class CustomNavbar extends Component {
             <NavItem eventKey={7} href="#Footer">
               Contact
             </NavItem>
-            <NavItem
+            {/* <NavItem
               eventKey={8}
               href="https://10to8.com/book/885ff967-6dca-4509-abde-35106ca9cf02/uuid/"
             >
               <Button className="BookButton">Book a Free Consultation</Button>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
