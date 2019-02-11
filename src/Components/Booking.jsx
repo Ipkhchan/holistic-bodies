@@ -9,7 +9,7 @@ class Booking extends React.Component {
   }
 
   render() {
-    const { handleClick, toggleBooking } = this.props;
+    const { toggleBooking } = this.props;
 
     return (
       <div className="BookingPopup">
