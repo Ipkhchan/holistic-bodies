@@ -51,14 +51,14 @@ class Home extends Component {
               <NavItem eventKey={2} className="nav-link" href="#About">
                 About
               </NavItem>
-              <NavItem eventKey={3} className="nav-link" href="#Videos">
-                Videos
+              <NavItem eventKey={3} className="nav-link" href="#Training">
+                Education
               </NavItem>
               <NavItem eventKey={4} className="nav-link" href="#Merchandise">
                 Merchandise
               </NavItem>
-              <NavItem eventKey={5} className="nav-link" href="#Training">
-                Training
+              <NavItem eventKey={5} className="nav-link" href="#Videos">
+                Empowerment
               </NavItem>
               <NavItem eventKey={6} className="nav-link" href="#Subscribe">
                 Subscribe

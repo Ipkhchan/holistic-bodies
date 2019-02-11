@@ -12,32 +12,11 @@ import './Training.css';
 import Booking from './Booking';
 
 class Training extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showBooking: false,
-    };
-  }
-
-  toggleBooking = () => {
-    const { showBooking } = this.state;
-
-    showBooking
-      ? this.setState({ showBooking: false })
-      : this.setState({ showBooking: true });
-  };
-
   render() {
-    const { showBooking } = this.state;
+    const { toggleBooking } = this.props;
 
     return (
       <div className="Training">
-        {showBooking && (
-          <Booking
-            handleClick={this.handleClick}
-            toggleBooking={this.toggleBooking}
-          />
-        )}
         <h1>Education</h1>
         <Grid>
           <Row className="Description-wrapper">
@@ -82,7 +61,7 @@ class Training extends Component {
                     be facing, you can accomplish your goals with a results
                     coach by your side!
                   </p>
-                  <button type="button" onClick={this.toggleBooking}>
+                  <button type="button" onClick={toggleBooking}>
                     Free Consultation- Book Now
                   </button>
                 </div>
@@ -102,7 +81,7 @@ class Training extends Component {
                     benefits. You can tackle your aim with a qualified coach by
                     your side!
                   </p>
-                  <button type="button" onClick={this.toggleBooking}>
+                  <button type="button" onClick={toggleBooking}>
                     Free Consultation- Book Now
                   </button>
                 </div>
@@ -122,7 +101,7 @@ class Training extends Component {
                     action and accomplishing your goals, and a coach can help
                     you navigate these sensitive roads.
                   </p>
-                  <button type="button" onClick={this.toggleBooking}>
+                  <button type="button" onClick={toggleBooking}>
                     Free Consultation- Book Now
                   </button>
                 </div>
@@ -142,7 +121,7 @@ class Training extends Component {
                     starts with accountability, with someone understanding by
                     your side, hard emotions become easier to channel.
                   </p>
-                  <button type="button" onClick={this.toggleBooking}>
+                  <button type="button" onClick={toggleBooking}>
                     Free Consultation- Book Now
                   </button>
                 </div>

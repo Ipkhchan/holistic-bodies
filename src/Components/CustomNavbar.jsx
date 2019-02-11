@@ -9,6 +9,8 @@ import './CustomNavbar.css';
 
 export default class CustomNavbar extends Component {
   render() {
+    const { toggleBooking } = this.props;
+
     return (
       /*Creates a Navbar tag, check react-bootstrap to learn more about how it works*/
       <Navbar collapseOnSelect inverse fluid className="Nav">
@@ -25,34 +27,33 @@ export default class CustomNavbar extends Component {
         </Navbar.Header>
         {/*defines each nav item with collapsible feature for responsiveness*/}
         <Navbar.Collapse>
-          <Nav pullRight>
+          <Nav pullRight className="SectionLinkContainer">
             <NavItem eventKey={1} href="#Home">
               Home
             </NavItem>
             <NavItem eventKey={2} href="#About">
               About
             </NavItem>
-            <NavItem eventKey={3} href="#Videos">
-              Videos
+            <NavItem eventKey={3} href="#Training">
+              Education
             </NavItem>
-            <NavItem eventKey={4} href="#Training">
-              Training
-            </NavItem>
-            <NavItem eventKey={5} href="#Merchandise">
+            <NavItem eventKey={4} href="#Merchandise">
               Merchandise
             </NavItem>
-            <NavItem eventKey={6} href="#Subscribe">
+            <NavItem eventKey={5} href="#Videos">
+              Empowerment
+            </NavItem>
+            {/* <NavItem eventKey={6} href="#Subscribe">
               Subscribe
-            </NavItem>
-            <NavItem eventKey={7} href="#Footer">
-              Contact
-            </NavItem>
-            {/* <NavItem
-              eventKey={8}
-              href="https://10to8.com/book/885ff967-6dca-4509-abde-35106ca9cf02/uuid/"
-            >
-              <Button className="BookButton">Book a Free Consultation</Button>
             </NavItem> */}
+            {/* <NavItem eventKey={7} href="#Footer">
+              Contact
+            </NavItem> */}
+            <NavItem eventKey={6} className="BookButtonContainer">
+              <Button className="BookButton" onClick={toggleBooking}>
+                Book Free Consultation
+              </Button>
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

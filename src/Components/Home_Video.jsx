@@ -55,7 +55,7 @@ class Home_Videos extends Component {
                   position: 'relative',
                 }}
               >
-                {!isMobile && !isPlaying && (
+                {/* {!isMobile && !isPlaying && (
                   <div className="PlayButton">
                     <img
                       className="Play"
@@ -63,7 +63,7 @@ class Home_Videos extends Component {
                       alt="Play Button"
                     />
                   </div>
-                )}
+                )} */}
                 <video
                   width="100%"
                   height="100%"

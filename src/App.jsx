@@ -29,9 +29,25 @@ library.add(faEnvelope); /*adds Envelope Icon to website*/
 library.add(faTwitter); /*adds Twitter Icon to website*/
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { showBooking: false };
+  }
+
+  toggleBooking = () => {
+    const { showBooking } = this.state;
+
+    showBooking
+      ? this.setState({ showBooking: false })
+      : this.setState({ showBooking: true });
+  };
+
   render() {
+    const { showBooking } = this.state;
+
     return (
       <div className="App">
+        {showBooking && <Booking toggleBooking={this.toggleBooking} />}
         {/*calls Home component with scrollable anchor*/}
         <ScrollableAnchor id="Home">
           <div>
@@ -63,14 +79,26 @@ class App extends Component {
           }}
         >
           <div>
-            <Route exact path="/" component={Navbar} />
+            <Route
+              exact
+              path="/"
+              render={props => (
+                <Navbar {...props} toggleBooking={this.toggleBooking} />
+              )}
+            />
           </div>
         </Headroom>
 
         {/*calls Training component with scrollable anchor*/}
         <ScrollableAnchor id="Training">
           <div>
-            <Route exact path="/" component={Training} />
+            <Route
+              exact
+              path="/"
+              render={props => (
+                <Training {...props} toggleBooking={this.toggleBooking} />
+              )}
+            />
           </div>
         </ScrollableAnchor>
 
