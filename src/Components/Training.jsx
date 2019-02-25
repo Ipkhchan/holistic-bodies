@@ -24,9 +24,9 @@ class Training extends Component {
             <Col className="Description" xs={12} md={8}>
               <p>
                 Whether your goal is to elevate your overall fitness, gain
-                strength, drop body fat, increase lean muscle or simply move
+                strength, lose body fat, gain lean muscle, or simply move
                 better, our personal training is the fastest way to get there.
-                Books a free consultation with us today to get started.
+                Book a free consultation with us today to get started.
               </p>
             </Col>
             <Col md={2} />
@@ -58,8 +58,8 @@ class Training extends Component {
                   <h3>ADOPT A WINNING MINDSET</h3>
                   <p>
                     Don't settle for less. Regardless of any obstacle you might
-                    be facing, you can accomplish your goals with a results
-                    coach by your side!
+                    be facing, you can accomplish your goals with a
+                    results-focused coach by your side!
                   </p>
                   <button type="button" onClick={toggleBooking}>
                     Free Consultation- Book Now
@@ -77,9 +77,9 @@ class Training extends Component {
                 <div>
                   <h3>ELEVATE YOUR HEALTH AND WELL-BEING</h3>
                   <p>
-                    Challenge the status quo. To live long must understand the
-                    benefits. You can tackle your aim with a qualified coach by
-                    your side!
+                    Challenge the status quo. To live long you must understand
+                    the benefits and detriments of every decision you make. You
+                    can tackle your goals with a qualified coach by your side!
                   </p>
                   <button type="button" onClick={toggleBooking}>
                     Free Consultation- Book Now
@@ -98,8 +98,8 @@ class Training extends Component {
                   <h3>IMPROVE YOUR PERSONAL LIFE</h3>
                   <p>
                     Rise above adversity. Motivation is essential to taking
-                    action and accomplishing your goals, and a coach can help
-                    you navigate these sensitive roads.
+                    action and accomplishing your goals. A coach can help you
+                    navigate Through these often stressful and ambiguous roads.
                   </p>
                   <button type="button" onClick={toggleBooking}>
                     Free Consultation- Book Now
@@ -117,9 +117,10 @@ class Training extends Component {
                 <div>
                   <h3>CREATE EMOTIONAL ACCOUNTABILITY</h3>
                   <p>
-                    Create deep abundance. Becoming the hero of your own life
-                    starts with accountability, with someone understanding by
-                    your side, hard emotions become easier to channel.
+                    Create overflowing abundance. Becoming the hero of your own
+                    life starts with accountability. With someone that
+                    understands you by your side, tough emotions become easier
+                    to channel towards achieving your goals.
                   </p>
                   <button type="button" onClick={toggleBooking}>
                     Free Consultation- Book Now

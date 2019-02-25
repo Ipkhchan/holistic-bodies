@@ -1,54 +1,78 @@
-import React, { Component} from 'react';
-import {Grid, Row, Col, Image, Button} from 'react-bootstrap'; /*react-bootstrap is used for better formatting and responsiveness of website: https://react-bootstrap.github.io/ */
+import React, { Component } from 'react';
+import {
+  Grid,
+  Row,
+  Col,
+  Image,
+  Button,
+} from 'react-bootstrap'; /*react-bootstrap is used for better formatting and responsiveness of website: https://react-bootstrap.github.io/ */
 import './About.css';
 
-
 class About extends Component {
-    render() {
-        return (
-            <div className="About">
-                <Grid>
-                    {/*mission statment text and blog button*/}
-                    <Row className="mission-statement">
-                        <h2>Mission Statement</h2>
-                        { /* <Col md={1} /> */}
-                        <Col md={12} className="mission-statement-wrapper">
-                            <p className="mission-statement-text"><b>"Holistic bodies is about redefining strength, we are here to educate you about how strength plays a
-                                vital role in our lives, our goal is to empower you to make decisions that can lead you to live a
-                                fulfilled and purposeful life. We want you to enjoy your life through the means of something already
-                                exists within you. Strength."
-                            </b></p>
-                        </Col>
-                        { /* <Col md={1} className="Bttn-wrapper" >
+  render() {
+    return (
+      <div className="About">
+        <Grid>
+          {/*mission statment text and blog button*/}
+          <Row className="mission-statement">
+            <h2>Mission Statement</h2>
+            {/* <Col md={1} /> */}
+            <Col md={12} className="mission-statement-wrapper">
+              <p className="mission-statement-text">
+                <b>
+                  "Delivering personalized health and wellness education &
+                  services to help you make better life decisions"
+                </b>
+              </p>
+            </Col>
+            {/* <Col md={1} className="Bttn-wrapper" >
                             <Button className="Bttn" href="https://holsiticbodies.blogspot.com/">Continue to Blog</Button>
                         </Col> */}
-                    </Row>
-                    {/*About text with logo*/}
-                    <Row className="about-us">
-                        <h2 className="title">About Us</h2>
-                        <Col md={6} className="motto-wrapper">
-                            <div className="triangle-wrapper">
-                                <Image src="assets/triangle.png" responsive className="triangle"/>
-                            </div>
-                        </Col>
-                       {/* <Col md={1} />*/}
-                        <Col md={6} className="About-us-wrapper">
-                            <p className="about-us-text">If you are reading this, it means you are here to learn about my passion project, moving forward known as
-                                Holistic bodies. I have always found that the best way to find the origin of your existence, the most
-                                effective way to learn, grow, cultivate, progress is through others. However, I want to remind you that I
-                                am not talking about using others, manipulating others. I am talking about connecting with others on a
-                                human level. Therefore, I present to you - your journey.
-                            </p>
-                            <p className="about-us-text">Holistic bodies is about creating an holistic self. Holistic way of living involves the commitment to growth. Growth requires you to understand your own individual self, keeping an audit of your strength and weaknesses, and seizing the opportunities provided to you.
-                            Holistics bodies is a space where you can learn about yourself, use tools to improve yourself, and share your improvements with the rest of the community.
-                            We believe in empowering individuals through helping them explore their ethos, pathos and logos.
-                            </p>
+          </Row>
+          {/*About text with logo*/}
+          <Row className="about-us">
+            <h2 className="title">About Us</h2>
+            <Col md={6} className="motto-wrapper">
+              <div className="triangle-wrapper">
+                <Image
+                  src="assets/triangle.png"
+                  responsive
+                  className="triangle"
+                />
+              </div>
+            </Col>
+            {/* <Col md={1} />*/}
+            <Col md={6} className="About-us-wrapper">
+              <p className="about-us-text">
+                If you are reading this, it means you are here to change your
+                life. We have found that the best way to find the origin of your
+                existence- the most effective way to learn, grow, cultivate, and
+                progress- is through others. Through connecting with your
+                environment on a emotional level.
+              </p>
+              <p className="about-us-text">
+                Holistic Bodies is redefining strength to make better decisions.
+                We are here to educate you about the vital role of strength in
+                our lives. Our goal is to empower you to make decisions that can
+                help you live a fulfilled and purposeful life. We want you to
+                enjoy your life through the means of something that already
+                exists within you. Strength.
+              </p>
+              <p className="about-us-text">
+                Living holistically involves you making a commitment to growth.
+                Growth requires you to understand yourself-keeping an audit of
+                your strengths, weaknesses and seizing the opportunities
+                provided to you. Holistic Bodies is a space where you can learn
+                about yourself, use tools to improve yourself, and make better
+                decisions to elevate your life. We believe in empowering
+                individuals by helping them explore their ethos, pathos and
+                logos.
+              </p>
+            </Col>
+          </Row>
 
-                        </Col>
-                    </Row>
-
-                    {/*About me text with picture but currently commented out*/}
-                   {/* <Row className="about-me">
+          {/*About me text with picture but currently commented out*/}
+          {/* <Row className="about-me">
                         <h2 className="title">About Me</h2>
                         <Col md={1} />
                         <Col md={6} className="person-wrapper">
@@ -62,10 +86,10 @@ class About extends Component {
                         </Col>
                         <Col md={1} />
                     </Row>*/}
-                </Grid>
-            </div>
-        );
-    }
+        </Grid>
+      </div>
+    );
+  }
 }
 
 export default About;
