@@ -10,27 +10,61 @@ import './Home.css';
 class Home_Videos extends Component {
   constructor(props) {
     super(props);
-    this.state = { isPlaying: false };
+    this.state = { isPlaying: false, isMuted: true };
   }
 
-  checkPlay = e => {
-    e.preventDefault();
-    if (e.target.paused) {
-      this.setState({ isPlaying: false });
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScrollVidPlay);
+    const vid = document.querySelector('.Player');
+    vid.addEventListener('volumechange', this.toggleMute);
+    this.setState({ isPlaying: true });
+  }
+
+  componentDidUpdate() {
+    const { isPlaying, isMuted } = this.state;
+    const vid = document.querySelector('.Player');
+
+    if (isPlaying) {
+      vid.play();
     } else {
-      this.setState({ isPlaying: true });
+      vid.pause();
+    }
+
+    if (isMuted) {
+      vid.muted = true;
+    } else {
+      vid.muted = false;
+    }
+  }
+
+  toggleMute = e => {
+    const vid = document.querySelector('.Player');
+    if (vid.muted) {
+      this.setState({ isMuted: true });
+    } else {
+      this.setState({ isMuted: false });
+    }
+  };
+
+  handleScrollVidPlay = () => {
+    const vid = document.querySelector('.Player');
+    const vidPos = vid.getBoundingClientRect();
+    const { isMuted } = this.state;
+
+    if (vidPos.top > -150) {
+      this.setState({ isPlaying: true, isMuted: isMuted ? true : false });
+    } else {
+      this.setState({ isPlaying: false });
     }
   };
 
   togglePlay = e => {
-    e.preventDefault();
-    const vid = e.target;
+    const vid = document.querySelector('.Player');
+    const { isMuted } = this.state;
 
     if (vid.paused) {
-      vid.play();
-      this.setState({ isPlaying: true });
+      this.setState({ isPlaying: true, isMuted: isMuted ? true : false });
     } else {
-      vid.pause();
       this.setState({ isPlaying: false });
     }
   };
@@ -70,8 +104,6 @@ class Home_Videos extends Component {
                   controls
                   className="Player"
                   onClick={this.togglePlay}
-                  onPause={this.checkPlay}
-                  onPlay={this.checkPlay}
                 >
                   <source src="/assets/LandingPageVideo.mp4" type="video/mp4" />
                 </video>
