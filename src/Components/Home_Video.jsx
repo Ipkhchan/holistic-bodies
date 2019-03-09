@@ -51,7 +51,7 @@ class Home_Videos extends Component {
     const vidPos = vid.getBoundingClientRect();
     const { isMuted } = this.state;
 
-    if (vidPos.top > -150) {
+    if (vidPos.top > -300) {
       this.setState({ isPlaying: true, isMuted: isMuted ? true : false });
     } else {
       this.setState({ isPlaying: false });
