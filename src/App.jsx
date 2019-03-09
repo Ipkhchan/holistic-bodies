@@ -34,6 +34,20 @@ class App extends Component {
     this.state = { showBooking: false };
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScrollShow);
+  }
+
+  handleScrollShow = e => {
+    const tripwireElement = document.querySelector('.Testimonials');
+    const tripwireElementPos = tripwireElement.getBoundingClientRect();
+
+    if (tripwireElementPos.top < 0) {
+      window.removeEventListener('scroll', this.handleScrollShow);
+      this.setState({ showBooking: true });
+    }
+  };
+
   toggleBooking = () => {
     const { showBooking } = this.state;
 
