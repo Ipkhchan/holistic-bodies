@@ -18,7 +18,7 @@ class Foot extends Component {
               {/*this code retrieves the year and updates it automatically*/}
               <ul className="list">
                 <li className="footer-copyright list-unstyled first horizontal">
-                  &copy; {new Date().getFullYear()} Holisitic Bodies
+                  &copy; {new Date().getFullYear()} Holistic Bodies
                 </li>
                 <li className="list-unstyled horizontal">
                   <a href={'/Terms'} className="link">
@@ -26,16 +26,6 @@ class Foot extends Component {
                   </a>
                 </li>
               </ul>
-              <div className="developer-copyright">
-                &copy; {new Date().getFullYear()} Developed By:{' '}
-                <a
-                  href="https://www.akashrai.me.s3-website.ca-central-1.amazonaws.com"
-                  className="link"
-                >
-                  {' '}
-                  Akash Rai Chhabria{' '}
-                </a>
-              </div>
             </Col>
             <Col md={4} sm={3} />
           </Row>
