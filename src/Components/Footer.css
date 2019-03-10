@@ -1,20 +1,25 @@
 /*CSS code for Footer.jsx*/
-
 .Footer {
   padding: 2% 0 2% 0;
 }
 
+.Footer h1 {
+  margin-bottom: 30px;
+}
+
 a {
-  margin: 0 5% 0 0;
+  margin: 0 2.5% 0 2.5%;
 }
 
 .social-media {
-  margin: 0 0 0 5%;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .instant,
 .twitter,
-.mail {
+.mail,
+.youtube {
   padding: 2% 2% 2% 2%;
   font-size: 50px;
   color: #d5d5d5;
@@ -36,19 +41,4 @@ a {
 
 p {
   text-align: center;
-}
-
-/*Responsive styling*/
-
-@media screen and (min-width: 678px) and (max-width: 991px) {
-  .social-media {
-    margin: 0 auto;
-    padding: 0 0 0 35%;
-  }
-}
-@media screen and (max-width: 678px) {
-  .social-media {
-    margin: 0;
-    padding: 0 0 0 27.5%;
-  }
 }
