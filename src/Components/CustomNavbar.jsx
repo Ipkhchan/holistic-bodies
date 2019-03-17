@@ -17,11 +17,9 @@ export default class CustomNavbar extends Component {
         {/*Defines the header for the navbar*/}
         <Navbar.Header>
           <Navbar.Brand>
-            <div>
-              <a href="#Home" style={{ color: '#9d9d9d' }}>
-                Holistic Bodies{' '}
-              </a>
-            </div>
+            <a href="#Home" style={{ color: '#9d9d9d' }}>
+              Holistic Bodies
+            </a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
