@@ -10,67 +10,19 @@ import './Home.css';
 class Home_Videos extends Component {
   constructor(props) {
     super(props);
-    this.state = { isPlaying: false, isMuted: true };
   }
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScrollVidPlay);
-    const vid = document.querySelector('.Player');
-    vid.addEventListener('volumechange', this.toggleMute);
-    this.setState({ isPlaying: true });
-  }
-
-  componentDidUpdate() {
-    const { isPlaying, isMuted } = this.state;
-    const vid = document.querySelector('.Player');
-
-    if (isPlaying) {
-      vid.play();
-    } else {
-      vid.pause();
-    }
-
-    if (isMuted) {
-      vid.muted = true;
-    } else {
-      vid.muted = false;
-    }
-  }
-
-  toggleMute = e => {
-    const vid = document.querySelector('.Player');
-    if (vid.muted) {
-      this.setState({ isMuted: true });
-    } else {
-      this.setState({ isMuted: false });
-    }
-  };
-
-  handleScrollVidPlay = () => {
-    const vid = document.querySelector('.Player');
-    const vidPos = vid.getBoundingClientRect();
-    const { isMuted } = this.state;
-
-    if (vidPos.top > -300) {
-      this.setState({ isPlaying: true, isMuted: isMuted ? true : false });
-    } else {
-      this.setState({ isPlaying: false });
-    }
-  };
 
   togglePlay = e => {
-    const vid = document.querySelector('.Player');
-    const { isMuted } = this.state;
+    const vid = e.target;
 
     if (vid.paused) {
-      this.setState({ isPlaying: true, isMuted: isMuted ? true : false });
+      vid.pause();
     } else {
-      this.setState({ isPlaying: false });
+      vid.play();
     }
   };
 
   render() {
-    const { isPlaying } = this.state;
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     );
@@ -99,6 +51,8 @@ class Home_Videos extends Component {
                   </div>
                 )} */}
                 <video
+                  autoPlay
+                  muted
                   width="100%"
                   height="100%"
                   controls
