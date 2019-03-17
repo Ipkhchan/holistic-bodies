@@ -9,20 +9,17 @@ import './Videos.css';
 import axios from 'axios';
 
 class Videos extends Component {
-  // componentDidMount() {
-  //   console.log("here");
-  //   axios({
-  //     method: 'GET',
-  //     url: 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyDoNAkazWSrZlEnqDZkP4fVT7qfarjP_As',
-  //     headers: {'maxResults': '25',
-  //              'forMine': 'true',
-  //              'part': 'snippet',
-  //              'q': '',
-  //              'type': 'video'}
-  //   }).then((results) => {
-  //     console.log("youtube", results);
-  //   })
-  // }
+  componentDidMount() {
+    axios({
+      method: 'GET',
+      url: 'https://sigma-crow-206718.firebaseio.com/videos.json',
+      params: {
+        auth: 'PWy48lOwK0xfhwObOqXiiFTkjc3nHJHOQ8FeSz13',
+      },
+    }).then(results => {
+      console.log(Object.values(results.data).map(video => video.videoUrl));
+    });
+  }
 
   render() {
     return (
