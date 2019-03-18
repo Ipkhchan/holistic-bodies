@@ -9,22 +9,32 @@ import './Videos.css';
 import axios from 'axios';
 
 class Videos extends Component {
-  // componentDidMount() {
-  //   console.log("here");
-  //   axios({
-  //     method: 'GET',
-  //     url: 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyDoNAkazWSrZlEnqDZkP4fVT7qfarjP_As',
-  //     headers: {'maxResults': '25',
-  //              'forMine': 'true',
-  //              'part': 'snippet',
-  //              'q': '',
-  //              'type': 'video'}
-  //   }).then((results) => {
-  //     console.log("youtube", results);
-  //   })
-  // }
+  constructor(props) {
+    super(props);
+    this.state = { videoUrls: [] };
+  }
+
+  componentDidMount() {
+    axios({
+      method: 'GET',
+      url: 'https://sigma-crow-206718.firebaseio.com/videos.json',
+      params: {
+        auth: 'PWy48lOwK0xfhwObOqXiiFTkjc3nHJHOQ8FeSz13',
+      },
+    }).then(results => {
+      const videoIds = Object.values(results.data)
+        .map(video => video.videoUrl)
+        .slice(0, 3);
+      const videoUrls = videoIds.map(
+        videoId => `https://www.youtube.com/embed/${videoId}`
+      );
+      this.setState({ videoUrls: videoUrls });
+    });
+  }
 
   render() {
+    const { videoUrls } = this.state;
+
     return (
       <div className="Videos">
         <h1>Empowerment</h1>
@@ -37,8 +47,14 @@ class Videos extends Component {
             <Col md={3} />
           </Row>
           {/*contains the style and features of the video player, check documentation for react-player to learn more*/}
-          <Row className="Video-wrapper">
-            <Col md={4} className="Video_1">
+
+          <div className="Video-Row">
+            {videoUrls.map(videoUrl => (
+              <div md={4} className="Video-Wrapper">
+                <iframe src={videoUrl} className="Video" />
+              </div>
+            ))}
+            {/* <Col md={4} className="Video_1">
               <ReactPlayer
                 className="player"
                 url="assets/EDUCATE.mp4"
@@ -64,8 +80,8 @@ class Videos extends Component {
                 height="100%"
                 controls
               />
-            </Col>
-          </Row>
+            </Col> */}
+          </div>
         </Grid>
       </div>
     );
