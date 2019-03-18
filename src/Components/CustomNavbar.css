@@ -96,6 +96,12 @@ div.navbar-brand a {
   }
 }
 
+@media (min-width: 881px) {
+  .navbar-header {
+    width: 15%;
+  }
+}
+
 /* @media (max-width: 768px) {
   .Nav .BookButtonContainer .BookButton {
     background: none;
